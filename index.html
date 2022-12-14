@@ -6,9 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 </head>
 
 <body>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <section class="container">
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Add new todo" class="todo-input" />
+                <button type="submit" class="add-new-todo-btn">
+            <i class="fa fa-plus-circle"></i>
+          </button>
+            </form>
+            <div class="select">
+                <select class="filter-todos">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+            </div>
+        </div>
+        <div class="todos-container">
+            <ul class="todos">
+                <li class="todo">
+                    <span class="todo-title">Task 1</span>
+                    <div class="todo-btns">
+                        <button class="check-todo-btn">
+                <i class="fa fa-check"></i>
+              </button>
+                        <button class="edit-todo-btn"><i class="fa fa-edit"></i></button>
+                        <button class="delete-todo-btn">
+                <i class="fa fa-trash"></i>
+              </button>
+                    </div>
+                </li>
+                <li class="todo completed">
+                    <span class="todo-title">Task 1</span>
+                    <div class="todo-btns">
+                        <button class="check-todo-btn">
+                <i class="fa fa-check"></i>
+              </button>
+                        <button class="edit-todo-btn"><i class="fa fa-edit"></i></button>
+                        <button class="delete-todo-btn">
+                <i class="fa fa-trash"></i>
+              </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     <script src="./assets//js/script.js"></script>
 </body>
 
