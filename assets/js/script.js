@@ -41,23 +41,6 @@ function showTodos() {
         });
       break;
   }
-  // if (filter === "all") {
-  //   todos.forEach((item) => {
-  //     createTodo(item);
-  //   });
-  // } else if (filter === "completed") {
-  //   todos
-  //     .filter((item) => item.isCompleted)
-  //     .forEach((item) => {
-  //       createTodo(item);
-  //     });
-  // } else if (filter === "uncompleted") {
-  //   todos
-  //     .filter((item) => !item.isCompleted)
-  //     .forEach((item) => {
-  //       createTodo(item);
-  //     });
-  // }
 }
 
 // create new todo and add to DOM
