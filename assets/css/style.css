@@ -84,9 +84,10 @@ form button:hover {
 }
 
 .select {
-    width: 22%;
+    width: 25%;
     background-color: var(--main-white);
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .select .filter-todos {
@@ -96,23 +97,19 @@ form button:hover {
     appearance: none;
     border: none;
     outline: none;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 600;
     color: var(--primary-color);
     cursor: pointer;
 }
 
 .select::after {
     content: "\25BC";
-    font-size: 1rem;
     color: var(--primary-color);
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    padding-right: 0.3rem;
 }
 
 .todos-container {
-    width: 75%;
+    width: 73%;
     margin: 1rem 0;
 }
 
@@ -126,7 +123,7 @@ form button:hover {
 
 .todos .todo {
     width: 100%;
-    padding: 0.8rem 0;
+    padding: 0.8rem 0.5rem;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
@@ -135,7 +132,7 @@ form button:hover {
 .todo .todo-title {
     flex: 1;
     font-size: 1rem;
-    padding-left: 0.8rem;
+    padding-left: 0.3rem;
     color: var(--primary-color);
 }
 
@@ -149,6 +146,7 @@ form button:hover {
     background-color: transparent;
     border: none;
     outline: none;
+    padding: 0 0.2rem;
     cursor: pointer;
     font-size: 1rem;
 }
